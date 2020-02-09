@@ -1,0 +1,79 @@
+:root {
+    background-image: tausta.jpg;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+
+header {
+    height: 50px;
+}
+
+body {
+    background-image: url("tausta.jpg");
+    background-repeat: no-repeat;
+    background-size: 1980px 1028px;
+    max-width: 800px;
+}
+
+p {
+    text-align: center;
+
+}
+
+a:hover {
+    color: aqua
+}
+
+header {
+    border: solid black 1px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    background-color: #123F53;
+    font-family: fantasy;
+    margin: auto;
+}
+
+
+h1 {
+    color: rgba(255, 0, 0, 0.58);
+    font-family: monospace;
+}
+
+h2 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center
+}
+
+footer {
+    border: solid black 1px;
+    background: rgba(255, 255, 255, 0.5)
+}
+
+
+@media only screen and (min-width:680px) {
+    body {
+        width: 80%;
+        border: solid black 1px
+    }
+
+
+}
+
+/*näyttö550px*/
+@media only screen and (max-width:550px) {
+
+
+    .otsake {
+        font-size: 0px;
+    }
+
+}

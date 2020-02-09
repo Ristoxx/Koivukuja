@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <link href="lightbox2-2.11.1/src/css/lightbox.css" rel="stylesheet" />
+    <title>Tarinanopat</title>
+    <script src="jazzi.js"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <meta name="author" content="Risto">
+    <meta name="keywords" content="Noppapeli">
+    <meta http-equiv="refresh" content="900">
+    <!-- lisää meta-elementtejä -->
+
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <div class="main">
+            <div class="otsake">
+                <h1>Tarinanopat</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2>Heitä noppaa ja luo hahmo kuvien perusteella</h2><br>
+        <div style="text-align:center">
+            <button id="hahmoNappi" onclick="hahmo()">Heitä noppaa</button>
+            <!--Napin klikkaaminen arpoo kolme kuvaa kuvasarjoista jotka simuloivat arpakuutioita-->
+            <div id="ima"></div>
+            <p>Hahmon nimi</p>
+            <input id="nimiKentta" type="text" name="Nimi"><br><br>
+            <button id="tarinaNappi" onclick="tarina()">Heitä uudestaan</button>
+            <!--Napin klikkaaminen arpoo yhdeksän kuvaa kuvasarjoista jotka simuloivat arpakuutioita-->
+            <div id="tarinat"></div>
+            <p>Kirjoita tänne tarina</p>
+            <!--Tässä on tekstikenttä johon käyttäjän pitäisi kirjoittaa tarina perustuen yllä oleviin kuviin-->
+            <textarea id="tarinaKentta" name="message" rows="10" cols="60"></textarea><br>
+            <!--Ohjeet tulevat näkyville lightboxia hyödyntävänä kuvana-->
+            <button id="btnImages" onclick="nollaa()">Nollaa</button><br>
+            <a href="ohjeet.jpg" data-lightbox="image-1" target="_blank">Ohjeet</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Harjoitustyö<br>Risto Lähteenkorva<br>Haaga-Helia ammattikorkeakoulu<br>2019</p>
+    </footer>
+    <script src="lightbox2-2.11.1/dist/js/lightbox-plus-jquery.js"></script>
+</body>
+
+</html>
